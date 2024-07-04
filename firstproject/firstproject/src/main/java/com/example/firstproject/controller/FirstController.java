@@ -12,4 +12,10 @@ public class FirstController {
         model.addAttribute("username", "Sujin");
         return "greetings"; // means templates/greetings.mustache -> transmit to browser
     }
+
+    @GetMapping("/bye")
+    public String seeYouNext(Model model) {
+        model.addAttribute("nickname", "Sujin");
+        return "goodbye";
+    }
 }
